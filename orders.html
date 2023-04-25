@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width," />
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-T5m5WERuXcjgzF8DAb7tRkByEZQGcpraRTinjpywg37AO96WoYN9+hrhDVoM6CaT"
+      crossorigin="anonymous"
+    /> -->
+  <title>Order Your Delicious Food</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">  <link rel="stylesheet" href="orders.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="preloader">
+
+  </div>
+  <nav class="navbar navbar-expand-lg bg-dark pt-2 pb-4" id="mainnavbar" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="letter-spacing: 7px">RIDDHIBAKES</a>
+      <p class="logobottom" style="
+              color: white;
+              font-size: 10px;
+              letter-spacing: 5px;
+              position: absolute;
+              top: 62%;
+              left: 3%;
+              color: lightgray;
+            ">
+        THE RIDSS BAKERY
+      </p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" style="margin-top: 1%; " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="mainnavul">
+          <li class="nav-item" style="margin-left: 10px;">
+            <a class="nav-link" aria-current="page" href="riddhibakes.html#home">Home</a>
+          </li>
+          <li class="nav-item" style="margin-left: 10px;">
+            <a class="nav-link" aria-current="page" href="aboutbakery.html">Our Bakery</a>
+          </li>
+          <li class="nav-item" style="margin-left: 10px;">
+            <a class="nav-link" aria-current="page" href="orders.html">Orders</a>
+          </li>
+          <li class="nav-item" style="margin-left: 10px;">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-transparent text-white btn-outline-secondary" id="loginbtn"
+          data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Log-In
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" style="padding: 0;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header" style="border-bottom: none; margin-left: 90%;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-white text-center">
+                <div class="modal modal-sheet position-static d-block" tabindex="-1" role="dialog" id="modalSignin">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content rounded-4 shadow" style="margin-top: -6%;">
+                      <div class="modal-header border-bottom-0 text-center">
+                        <h1 class="fw-bold mb-0 fs-2 text-center" style="margin-left: 23%;">Sign up for free</h1>
+                      </div>
+
+                      <div class="modal-body p-5 pt-0">
+                        <form class="">
+                          <div class="form-floating mb-3">
+                            <input type="email" class="form-control rounded-3" id="floatingInput"
+                              placeholder="name@example.com">
+                            <label for="floatingInput" style="margin-right: 62%;"> Email address</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input type="password" class="form-control rounded-3" id="floatingPassword"
+                              placeholder="Password">
+                            <label for="floatingPassword" style="margin-right: 70%;">Password</label>
+                          </div>
+                          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                          <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+                          <hr class="my-4">
+                          <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                          <a target="_blank" href="https://twitter.com/login"
+                            class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3">Sign up with Twitter</a>
+                          <a target="_blank" href="https://facebook.com/login"
+                            class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3">Sign up with Facebook</a>
+                          <a target="_blank" href="https://Github.com/login"
+                            class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3">Sign up with Github</a>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-secondary" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main" onmouseover="mouseovermain()">
+  </div>
+  <div class="inner reveal">
+    <div class="ordersleft">
+      <h1>Order Now :)</h1>
+      <p style="color: rgb(207, 176, 92);">Get Your Product On-Time</p>
+      <p style="margin-bottom: 5%;">In our shop we stock a range of the bread, cakes and confectionery to order, along
+        <br> with cake boards and boxes to buy.
+      </p>
+      <i class="fa-solid fa-arrow-right"></i> <span>We strive to keep a good selection of our products in store</span>
+      <br>
+      <i class="fa-solid fa-arrow-right"></i> <span>Our talented bakers also make customized celebration cakes</span>
+      <br>
+      <i class="fa-solid fa-arrow-right"></i> <span>Premium services and beyond your expectation</span> <br>
+      <i class="fa-solid fa-arrow-right"></i> <span>We have a takeaway menu offering breakfast delights</span> <br>
+    </div>
+    <div class="ordersright">
+      <input type="text" placeholder="Name*" required> &nbsp; &nbsp; &nbsp; &nbsp; <input type="email"
+        placeholder="Email*" required> <br> <br>
+      <input type="number" placeholder="Number*" required> &nbsp; &nbsp; &nbsp; &nbsp; <input type="text"
+        placeholder="address*" required>
+      <select class="form-select" id="selectA" onclick="otherorder()" aria-label="Default select example" required>
+        <option selected>Choose products</option>
+        <option value="1">
+          <pre>Fried Rice ₹450</pre>
+        </option>
+        <option value="2">
+          <pre>Kadai Paneer ₹750</pre>
+        </option>
+        <option value="3">
+          <pre>Chicken Biryani ₹250</pre>
+        </option>
+        <option value="4">
+          <pre>Fried Momos ₹60</pre>
+        </option>
+        <option value="5">
+          <pre>Onion Pizza ₹600</pre>
+        </option>
+        <option value="6">
+          <pre>Burger ₹350</pre>
+        </option>
+        <option value="7">Other</option>
+      </select>
+      <input type="text" id="orders" style="width: 100%; margin-top: 5%; text-align: center; padding: 10px;"
+        placeholder="Other then provide your item here">
+      <textarea name="detail" id="orderdetail" cols="30" rows="10" placeholder="Further Details"></textarea>
+      <input class="btn btn-primary" id="orderbtn"
+        style="color: white; background-color: rgb(207, 176, 92); border: 1px solid rgb(207, 176, 92); margin-left: 38%; margin-top: 3%;"
+        type="submit" value="ORDER">
+    </div>
+  </div>
+
+  <div class="footer reveal">
+    <div class="footercontactform" id="contact">
+      <form action="">
+        <h1>CONTACT US</h1>
+        <p>Meet the creative team that never sleeps. Say something to us we will answer to you.</p>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="name here">
+          <label for="floatingInput" style="margin-right: 80%; color: black;">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="number" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput" style="margin-right: 75%; color: black;">Number</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput" style="margin-right: 80%; color: black;">email</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea name="address" class="form-control rounded-3" id="address" cols="30" rows="10"></textarea>
+          <label for="floatingInput" style="margin-right: 78%; color: black; font-size: 17px;">address</label>
+        </div>
+        <button class="btn w-100" id="submitbtn" style="background-color: rgb(100, 80, 55); color: white;"
+          onmouseover="submitover()" onmouseout="submitout()">SUBMIT</button>
+      </form>
+    </div>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.1838376933547!2d74.6364329754261!3d26.449802479830755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396be720115b0cbd%3A0x78b72d7fa45ded45!2sAptech%20Computer%20Education%20%2C%20Ajmer!5e0!3m2!1sen!2sin!4v1682180265479!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;"  allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <div class="footer2 reveal">
+    <div class="about">
+      <h1>About</h1>
+      <p>Bakery is a premium WordPress theme with over 2,000 active users around the globe. It prides itself on being
+        incredibly easy to use and powerful through its advanced options that allow you to build professional and
+        stunning website without any coding knowledge.</p>
+    </div>
+    <div class="newsletter">
+      <div class="offset-md-1">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control bg-secondary" placeholder="Email address">
+            <button class="btn btn-light" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer3 reveal">
+    <div class="gallery">
+      <h1>OUR GALLERY</h1>
+      <div class="gallery3">
+        <img src="img/gallery1.jpg" alt="">
+        <img src="img/gallery2.jpg" alt="">
+        <img src="img/gallery3.jpg" alt="">
+      </div>
+      <div class="gallery6">
+        <img src="img/gallery4.JPG" alt="">
+        <img src="img/gallery5.jpg" alt="">
+        <img src="img/gallery6.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="opening">
+      <h1>OPENING HOUR</h1>
+      <pre>Monday            8:00 - 16:00</pre>
+      <pre>Tuesday           8:00 - 16:00</pre>
+      <pre>Wednesday         8:00 - 16:00</pre>
+      <pre>Thursday          8:00 - 16:00</pre>
+      <pre>Friday            8:00 - 16:00</pre>
+      <pre>Saturday          10:00 - 16:00</pre>
+      <pre>sunday            10:00 - 16:00</pre>
+    </div>
+
+    <div class="contactdetail">
+      <h1>CONTACT US</h1>
+      <i class="fa-solid fa-phone" style="color: rgb(218, 164, 114); margin-right: 3.5%;"></i> <span>1234-5678-0</span>
+      <br>
+      <i class="fa-solid fa-location-dot" style="color: rgb(218, 164, 114); margin-right: 3.5%;"></i> <span>Beawar Road
+        Ajmer</span> <br>
+      <i class="fa-solid fa-envelope" style="color: rgb(218, 164, 114); margin-right: 3.5%;"></i>
+      <span>Riddhibakes@gmail.com</span> <br>
+      <i class="fa-solid fa-earth-americas" style="color: rgb(218, 164, 114); margin-right: 3.5%;"></i>
+      <span>www.riddhibakes.com</span>
+    </div>
+  </div>
+
+  <div class="rate">
+    <h1>We all need people who will give us feedback :)</h1>
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+  <script>
+    window.addEventListener('scroll', reveal);
+    function reveal() {
+      var reveals = document.querySelectorAll('.reveal');
+
+      for (var i = 0; i < reveals.length; i++) {
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add('active');
+        }
+        else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+
+
+    function mouse_over() {
+      var mouseover = document.getElementById('hover').style.color = "red";
+      mouseover = document.getElementById('hover').style.cursor = "pointer";
+      mouseover = document.getElementById("hover").style.transition = "all 0.6s";
+
+    }
+
+    function mouse_out() {
+      var mouseout = document.getElementById('hover').style.color = "white"
+    }
+
+    function mouseone_over() {
+      let one = document.getElementById('dropdown').style.display = "block";
+      let two = document.getElementById('dropdown').style.cursor = "pointer";
+      let three = document.getElementById('dropdown').style.marginLeft = "-55px";
+    }
+
+    function mousetwo_out() {
+      let one = document.getElementById('dropdown').style.display = "inline";
+    }
+
+    function mouseovermain() {
+      let main = document.getElementById('dropdown').style.display = "none";
+    }
+
+    function options() {
+      let option = document.getElementById('optionsright').style.backgroundColor = "red";
+    }
+
+
+    function otherorder() {
+      var x = document.getElementById('selectA').value;
+      if (x == "7") {
+        document.getElementById('orders').style.display = "inline";
+      } else {
+        document.getElementById('orders').style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    let loader = document.getElementById('preloader');
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
+  </script>
+</body>
+
+</html
